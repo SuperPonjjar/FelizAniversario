@@ -14,7 +14,7 @@
         abrirPresente();
         ">Abrir presente</button></div>
         <div class="presente">
-            <img src="https://github.com/Caique-P/FelizAniversario/blob/main/img/gift.png"  onclick="
+            <img src="img/gift.png"  onclick="
             abrirPresente();
             " alt="presente"
             width="300px"
@@ -24,7 +24,7 @@
         <script>
             function abrirPresente (){
                 // coloque efeito de confete/piscando em toda tela junto com o background atual (gif img/confete) sem esticar a imagem no fundo da tela, apenas repetindo ela em toda tela
-                document.querySelector('.confete').innerHTML = "<img src='https://github.com/Caique-P/FelizAniversario/blob/main/img/confete.gif' style='position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; object-fit: scale-down; '>"
+                document.querySelector('.confete').innerHTML = "<img src='img/confete.gif' style='position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; object-fit: scale-down; '>"
 
                 document.querySelector('.abrir').innerHTML = ""
                 if (window.location.href.indexOf('?video=') > -1 ){ 
@@ -63,7 +63,7 @@
                     "tema2.jpg",
                     "tema3.jpg"
                 ]
-            document.body.style.backgroundImage =  "url('https://github.com/Caique-P/FelizAniversario/blob/main/img/" + tema[window.location.href.split('tema=')[1] - 1]
+            document.body.style.backgroundImage =  "url('img/" + tema[window.location.href.split('tema=')[1] - 1]
               +  "')";
              }
         </script>
